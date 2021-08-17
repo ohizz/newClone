@@ -1,0 +1,335 @@
+ html {
+   box-sizing: border-box;
+ }
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   margin: 0 auto;
+   /* font-family: 'Ruslan Display', cursive;
+   font-family: 'Rajdhani', sans-serif; */
+   padding: 0;
+   background-color: black;
+   color: white;
+ }
+
+ nav {
+   display: flex;
+ }
+
+ ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ li {
+   font-family: 'Rajdhani';
+   display: inline-block;
+   font-variant: small-caps;
+   margin: 0 1rem;
+   opacity: .3;
+   font-variant: small-caps;
+   cursor: pointer;
+   font-size: 1.3rem;
+ }
+
+ li:hover {
+   opacity: 1;
+ }
+
+ header {
+   padding: 2rem 1.5rem 2rem;
+ }
+
+ .logo {
+   font-family: 'Ruslan Display';
+ }
+
+ .head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+ }
+
+
+ main {
+   /* max-width: 1200px; */
+   /* margin: 0 auto; */
+ }
+
+ .backgroundLoading {
+   position: fixed;
+   z-index: 1000;
+   background: black;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 0;
+   left: 0;
+   transition: opacity .4s linear;
+ }
+
+
+ .square {
+   animation: rotating 5s infinite;
+   font-size: 5rem;
+   font-family: 'Ruslan Display';
+   text-align: center;
+ }
+
+ @keyframes rotating {
+   0% {
+      transform: translateY(-40px);
+   }
+
+   30% {
+     transform: translateY(60px);
+   }
+
+   50% {
+     
+     transform: translateY(-90px);
+   }
+
+   80% {
+     transform: translateY(120px);
+   }
+
+   100% {
+     transform: translate(0);
+   }
+ }
+
+
+ button {
+   padding: .6rem;
+   border-radius: .1rem;
+   margin: .7rem 0 0 0;
+   background: white;
+   color: black;
+   border: 0;
+   font-size: 1.2rem;
+   font-weight: 500;
+   cursor: pointer;
+   font-family: 'Rajdhani';
+ }
+
+ .servicehead {
+   text-transform: capitalize;
+   font-weight: lighter;
+   opacity: .3;
+   font-size: 1.5rem;
+   color: white;
+   margin: 1rem 0 2rem 0;
+   font-family: 'Ruslan Display';
+ }
+
+ blockquote {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 3rem 0;
+   text-align: center;
+   font-size: 6rem;
+   font-weight: 700;
+   opacity: .1;
+   font-family: 'Zen Loop';
+ }
+
+ .services {
+   padding: 0 1.5rem;
+ }
+
+ .aboutp {
+   font-size: 2rem;
+   font-family: 'Rajdhani';
+ }
+
+ blockquote::before {
+   content: '"';
+ }
+
+ blockquote::after {
+   content: '"';
+ }
+
+ .quoteperson {
+   font-weight: lighter;
+   font-variant: small-caps;
+   /* text-transform: uppercase; */
+   opacity: .1;
+   margin-bottom: 6rem;
+   padding: 0 1.5rem;
+   font-family: 'Ruslan Display';
+ }
+
+ .services h3 {
+   margin: 2rem 0 3rem 0;
+   padding-bottom: 2rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+   border-bottom: 1px solid rgba(255, 255, 255, .1);
+   font-family: 'Ruslan Display';
+ }
+
+
+ .advicess {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-gap: 3rem;
+ }
+
+ .advicess div {
+   /* display: grid; */
+   /* justify-content: center;
+   align-items: center; */
+   padding: 2rem 1.5rem;
+   border-bottom: 1px solid rgba(255, 255, 255, .1);
+   transition: all .4s;
+   transform: translateY(100%);
+
+ }
+
+ .advicess div.active {
+   opacity: 1;
+   transform: translatey(0px);
+ }
+
+ .advicess h5 {
+   font-size: 1.5rem;
+   font-family: 'Ruslan Display';
+ }
+
+ .advicess p {
+   font-family: 'Rajdhani';
+   margin-top: .5rem;
+   font-size: 1rem;
+ }
+
+ .artcollection h4 {
+   font-size: 2rem;
+   padding: 2rem 1.5rem;
+   border-bottom: 1px solid rgba(255, 255, 255, .1);
+   font-family: 'Ruslan Display';
+   ;
+ }
+
+ .news {
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   width: 100%;
+ }
+
+
+ .newss {
+   position: relative;
+   margin: auto;
+   width: 100%;
+   overflow: hidden;
+ }
+
+ .btn {
+   position: absolute;
+   background: white;
+   color: black;
+   border-radius: 10%;
+   top: 30%;
+   padding: .5rem;
+   opacity: .3;
+   border: 0;
+   z-index: 1;
+   margin: 0;
+   right: 3%;
+   font-size: 1rem;
+   /* opacity: .1; */
+ }
+
+ .tab {
+   width: 1000px;
+   margin: 0;
+   /* display: flex; */
+   justify-content: space-between;
+   flex-wrap: wrap;
+   /* flex: 1; */
+   /* flex-direction: column; */
+   /* margin: 0 2rem; */
+ }
+
+ #lastclone {
+   margin: 0;
+ }
+
+
+ .tab p {
+   height: 100px;
+   width: 200px;
+   font-size: 1.3rem;
+   font-family: 'Rajdhani';
+ }
+
+ .tab h2 {
+   margin-top: 3rem;
+   font-size: .8rem;
+   font-variant: small-caps;
+   text-transform: lowercase;
+   font-family: 'Ruslan Display';
+
+ }
+
+ .about,
+ .services .advicess div {
+   padding: 1rem 1.5rem;
+ }
+
+ @media (min-width: 600px) {
+   .tab {
+     /* width: 800px; */
+   }
+
+   .tab p {
+     width: 500px;
+     height: 100px;
+     margin: 0;
+   }
+ }
+
+ @media (min-width: 1000px) {
+   body {
+     max-width: 1200px;
+   }
+
+   .advicess {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+     grid-gap: 3rem;
+   }
+
+   .news {
+     display: flex;
+     /* justify-content: center; */
+     align-items: center;
+     width: 100%;
+   }
+
+ }
